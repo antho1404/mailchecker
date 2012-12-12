@@ -1,0 +1,7 @@
+en:
+  mailchecker:
+    errors:
+      messages:
+        wrong_format: "the format is not valid (abc@example.com)"
+        wrong_gateway: "the domain is not responding"
+        temporary_email: "this kind of email is not valid (temporary email)"

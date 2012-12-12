@@ -1,0 +1,7 @@
+#= require mailchecker
+
+$("input[type=email]").mail_checker '<%= Mailchecker.token %>', 
+  success:        -> console.log "email #{$(this).val()} is valid"                # do what you whant when it's ok
+  invalid_format: -> console.error "format of #{$(this).val()} isn't valid"       # do what you whant when the format is not good
+  invalid_domain: -> console.error "domain of #{$(this).val()} is not responding" # do what you whant when the domain is not responding
+  temporary_mail: -> console.error "email #{$(this).val()} is a temporary mail"   # do what you whant when it's a temporary mail
